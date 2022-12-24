@@ -29,10 +29,12 @@ const components = [
     declarations: components,
     imports: [CommonModule, FormsModule, UtilsModule],
     exports: [
+        IconButtonComponent,
         SelectSaveComponent,
         ButtonGroupComponent,
         SelectComponent,
-        PathTreeComponent
+        PathTreeComponent,
+        ButtonComponent
     ]
 })
 export class UIControlsModule {

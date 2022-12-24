@@ -6,8 +6,8 @@ import {PlayOntrol} from "./play-сontrol";
 
 @Component({
   selector: 'ui-video',
-  templateUrl: './video-stream.component.html',
-  styleUrls: ['./video-stream.component.css']
+  templateUrl: './video.component.html',
+  styleUrls: ['./video.component.css']
 })
 export class VideoComponent implements OnInit, AfterViewInit {
   @ViewChild('myvideo1', {static: true})

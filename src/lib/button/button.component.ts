@@ -2,8 +2,8 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'ui-button',
-  templateUrl: './form-button.component.html',
-  styleUrls: ['./form-button.component.scss'],
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class ButtonComponent implements OnInit {
