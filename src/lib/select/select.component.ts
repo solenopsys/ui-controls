@@ -1,44 +1,16 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
+import {FreeProvider, IdTitle} from "../model";
 
 
-export interface IdTitle {
-  title: string;
-  id: string;
-}
 
-export interface FreeProvider {
-  initFilterSelector(str: Observable<string>): Observable<IdTitle[]>;
-}
-
-
-export class FilterCachedProvider implements FreeProvider {
-  private transformedArray!: IdTitle[];
-
-  constructor(private transformFunction: () => any) {
-  }
-
-  setData(dataArray: any[]) {
-    this.transformedArray = dataArray.map(this.transformFunction);
-  }
-
-  initFilterSelector(str: Observable<string>): Observable<IdTitle[]> {
-    const sub = new Subject<IdTitle[]>();
-    str.pipe().subscribe(query => {
-      sub.next(this.transformedArray.filter((s) => {
-        return query === '' || s.title.indexOf(query) >= 0;
-      }));
-    });
-    return sub.asObservable();
-  }
-}
 
 @Component({
-  selector: 'fui-free-select',
-  templateUrl: './free-select.component.html',
-  styleUrls: ['./free-select.component.css']
+  selector: 'ui-select',
+  templateUrl: './select.component.html',
+  styleUrls: ['./select.component.css']
 })
-export class FreeSelectComponent implements OnInit, OnDestroy {
+export class SelectComponent implements OnInit, OnDestroy {
 
 
   text!: string;

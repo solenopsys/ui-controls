@@ -1,0 +1,8 @@
+{
+  "name": "DataView",
+  "description": "Data view",
+  "component": "DataViewComponent",
+  "package": "@solenopsys/uimatrix-controls",
+  "io": {
+  }
+}

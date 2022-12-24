@@ -1,20 +1,20 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {ActionsButtonGroupComponent} from './actions-button-group.component';
+import {ButtonGroupComponent} from './button-group.component';
 
 describe('ActionsButtonGroupComponent', () => {
-  let component: ActionsButtonGroupComponent;
-  let fixture: ComponentFixture<ActionsButtonGroupComponent>;
+  let component: ButtonGroupComponent;
+  let fixture: ComponentFixture<ButtonGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ActionsButtonGroupComponent ]
+      declarations: [ ButtonGroupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActionsButtonGroupComponent);
+    fixture = TestBed.createComponent(ButtonGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

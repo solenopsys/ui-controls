@@ -1,59 +1,15 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
 import {ActivatedRoute} from '@angular/router';
-import {firstValueFrom} from "rxjs";
-
-
-class PlayControl {
-  public current!: string;
-
-  constructor(private client: HttpClient, private camera: string) {
-  }
-
-  getStartFrame(mils: number): Promise<any> {
-    return firstValueFrom(
-      this.client.get<{ file: string }>('/stream/' + this.camera + '/now/' + mils)
-        .pipe(map(res => res.file)));
-  }
-
-  getNextFrame(before: number): Promise<string | undefined> {
-    return firstValueFrom(
-      this.client.get<{ file: string }>('/stream/' + this.camera + '/next/' + before)
-        .pipe(map(res => res.file)));
-  }
-
-  init(startPoint: number): Promise<string> {
-    return new Promise((resolve, error) => {
-      this.getStartFrame(startPoint).then((file: string | undefined) => {
-        // @ts-ignore
-        this.current = file;
-        // @ts-ignore
-        setTimeout((z: any) => resolve(file), 1000);
-      });
-    });
-  }
-
-  nextFrame(): Promise<string> {
-    return new Promise((resolve, error) => {
-      const currentPoint = this.current.split('.')[0];
-      this.getNextFrame(+currentPoint).then((file2: any) => {
-        setTimeout((z: any) => resolve(file2), 2000);
-        this.current = file2;
-      });
-    });
-  }
-
-
-}
+import {PlayOntrol} from "./play-сontrol";
 
 
 @Component({
-  selector: 'fui-video-stream',
+  selector: 'ui-video',
   templateUrl: './video-stream.component.html',
   styleUrls: ['./video-stream.component.css']
 })
-export class VideoStreamComponent implements OnInit, AfterViewInit {
+export class VideoComponent implements OnInit, AfterViewInit {
   @ViewChild('myvideo1', {static: true})
   myvideo1!: ElementRef<any>;
 
@@ -68,7 +24,7 @@ export class VideoStreamComponent implements OnInit, AfterViewInit {
 
   show1 = true;
 
-  playController!: PlayControl;
+  playController!: PlayOntrol;
 
   prefix!: string;
 
@@ -113,7 +69,7 @@ export class VideoStreamComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: any) => {
       const camera = params.camera;
-      this.playController = new PlayControl(this.http, camera);
+      this.playController = new PlayOntrol(this.http, camera);
       this.prefix = '/videos/' + camera + '/';
     });
   }

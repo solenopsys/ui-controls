@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FreeSelectComponent } from './free-select.component';
+import { VideoComponent } from './video.component';
 
-describe('FreeSelectComponent', () => {
-  let component: FreeSelectComponent;
-  let fixture: ComponentFixture<FreeSelectComponent>;
+describe('VideoStreamComponent', () => {
+  let component: VideoComponent;
+  let fixture: ComponentFixture<VideoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FreeSelectComponent ]
+      declarations: [ VideoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FreeSelectComponent);
+    fixture = TestBed.createComponent(VideoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

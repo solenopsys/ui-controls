@@ -1,13 +1,12 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-
-import {FilterCachedProvider, FreeProvider, FreeSelectComponent, IdTitle} from '../free-select/free-select.component';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {FreeProvider} from "../model";
 
 @Component({
-    selector: 'fui-free-select-save',
-    templateUrl: './free-select-save.component.html',
-    styleUrls: ['./free-select-save.component.css']
+    selector: 'ui-select-save',
+    templateUrl: './select-save.component.html',
+    styleUrls: ['./select-save.component.css']
 })
-export class FreeSelectSaveComponent {
+export class SelectSaveComponent {
     @Output()
     save = new EventEmitter<string>();
 

@@ -2,7 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild, AfterViewInit, Input} from '@a
 import {GraphItem, PathTreeCalculatorService} from "./path-tree-calculator.service";
 
 @Component({
-  selector: 'fui-path-tree',
+  selector: 'ui-path-tree',
   templateUrl: './path-tree.component.html',
   styleUrls: ['./path-tree.component.css']
 })

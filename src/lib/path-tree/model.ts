@@ -1,7 +1,7 @@
 
 import {Observable} from 'rxjs';
 import {map, withLatestFrom} from 'rxjs/operators';
-import { FreeProvider, IdTitle } from "../free-select/free-select.component";
+import {FreeProvider, IdTitle} from "../model";
 
 
 export enum Direction {

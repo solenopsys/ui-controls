@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FreeSelectSaveComponent } from './free-select-save.component';
+import { SelectComponent } from './select.component';
 
-describe('FreeSelectSaveComponent', () => {
-  let component: FreeSelectSaveComponent;
-  let fixture: ComponentFixture<FreeSelectSaveComponent>;
+describe('FreeSelectComponent', () => {
+  let component: SelectComponent;
+  let fixture: ComponentFixture<SelectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FreeSelectSaveComponent ]
+      declarations: [ SelectComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FreeSelectSaveComponent);
+    fixture = TestBed.createComponent(SelectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

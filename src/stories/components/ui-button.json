@@ -1,0 +1,8 @@
+{
+  "name": "Button",
+  "description": "Button",
+  "component": "ButtonComponent",
+  "package": "@solenopsys/uimatrix-controls",
+  "io": {
+  }
+}
