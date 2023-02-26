@@ -1,5 +1,5 @@
 {
-  "name": "controls",
+  "name": "ui-controls",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-controls/src",
   "prefix": "ui",
