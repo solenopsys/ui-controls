@@ -2,7 +2,7 @@
   "name": "SelectSave",
   "description": "Select width save",
   "component": "SelectSaveComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
 
   }

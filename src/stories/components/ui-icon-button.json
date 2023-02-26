@@ -2,7 +2,7 @@
   "name": "IconButton",
   "description": "Icon button component",
   "component": "IconButtonComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
 
   }

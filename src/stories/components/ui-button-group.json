@@ -2,7 +2,7 @@
   "name": "ButtonGroup",
   "description": "Button group for commands",
   "component": "ButtonGroupComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
   }
 }

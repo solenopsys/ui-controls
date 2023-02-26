@@ -2,7 +2,7 @@
   "name": "Select",
   "description": "Select field",
   "component": "SelectComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
 
   }

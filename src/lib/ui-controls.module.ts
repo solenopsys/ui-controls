@@ -9,7 +9,7 @@ import {ButtonGroupComponent} from "./buttons-group/button-group.component";
 import {VideoComponent} from "./video/video.component";
 import {PathTreeComponent} from "./path-tree/path-tree.component";
 
-import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
+import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
 import {ButtonComponent} from "./button/button.component";
 import {IconButtonComponent} from "./icon-button/icon-button.component";
 import {DataViewComponent} from "./data-view/data-view.component";
@@ -39,6 +39,6 @@ const components = [
 })
 export class UIControlsModule {
     constructor(private ds: DeclaredService) {
-        ds.addComps("@solenopsys/uimatrix-controls", components)
+        ds.addComps("@solenopsys/ui-controls", components)
     }
 }

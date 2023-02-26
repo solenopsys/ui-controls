@@ -1,16 +1,16 @@
 {
   "name": "controls",
   "projectType": "library",
-  "sourceRoot": "packages/uimatrix/controls/src",
+  "sourceRoot": "packages/uimatrix/ui-controls/src",
   "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/packages/uimatrix/controls"
+        "coverage/packages/uimatrix/ui-controls"
       ],
       "options": {
-        "jestConfig": "packages/uimatrix/controls/jest.config.js",
+        "jestConfig": "packages/uimatrix/ui-controls/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/uimatrix/controls/src/**/*.ts",
-          "packages/uimatrix/controls/src/**/*.html"
+          "packages/uimatrix/ui-controls/src/**/*.ts",
+          "packages/uimatrix/ui-controls/src/**/*.html"
         ]
       },
       "outputs": [

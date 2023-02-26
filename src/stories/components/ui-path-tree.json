@@ -2,7 +2,7 @@
   "name": "PathTree",
   "description": "Path tree",
   "component": "PathTreeComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
   }
 }

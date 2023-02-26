@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { ViewType,DataView } from "@solenopsys/uimatrix-utils";
+import { ViewType,DataView } from "@solenopsys/ui-utils";
 
 @Component({
   selector: 'ui-data-view',

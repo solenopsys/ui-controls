@@ -2,7 +2,7 @@
   "name": "DataView",
   "description": "Data view",
   "component": "DataViewComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
   }
 }

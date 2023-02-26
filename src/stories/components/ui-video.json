@@ -2,7 +2,7 @@
   "name": "Video",
   "description": "Video player",
   "component": "VideoComponent",
-  "package": "@solenopsys/uimatrix-controls",
+  "package": "@solenopsys/ui-controls",
   "io": {
 
   }
