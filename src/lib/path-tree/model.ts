@@ -1,7 +1,8 @@
 
 import {Observable} from 'rxjs';
 import {map, withLatestFrom} from 'rxjs/operators';
-import {FreeProvider, IdTitle} from "../model";
+import {FreeProvider} from "@solenopsys/ui-utils";
+import {IdTitle} from "../model";
 
 
 export enum Direction {

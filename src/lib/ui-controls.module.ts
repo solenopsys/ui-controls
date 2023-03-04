@@ -34,7 +34,8 @@ const components = [
         ButtonGroupComponent,
         SelectComponent,
         PathTreeComponent,
-        ButtonComponent
+        ButtonComponent,
+        DataViewComponent
     ]
 })
 export class UIControlsModule {

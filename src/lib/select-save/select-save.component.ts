@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {FreeProvider} from "../model";
+import {FreeProvider} from "@solenopsys/ui-utils";
+
 
 @Component({
     selector: 'ui-select-save',

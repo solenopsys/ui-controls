@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {FreeProvider, IdTitle} from "../model";
+import { IdTitle} from "../model";
+import {FreeProvider} from "@solenopsys/ui-utils";
 
 
 
@@ -10,7 +11,7 @@ import {FreeProvider, IdTitle} from "../model";
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.css']
 })
-export class SelectComponent implements OnInit, OnDestroy {
+export class SelectComponent   {
 
 
   text!: string;
@@ -34,14 +35,10 @@ export class SelectComponent implements OnInit, OnDestroy {
 
   visible = false;
 
-  constructor() {
-  }
+  
+ 
 
-  ngOnInit(): void {
-
-  }
-
-  @Input('dataProvider')
+  @Input("dataProvider")
   set setDataProvider(dataProvider: FreeProvider) {// todo   warning
     if (dataProvider) {
       this.dataProvider = dataProvider;
@@ -54,7 +51,7 @@ export class SelectComponent implements OnInit, OnDestroy {
     this.strObservable.unsubscribe();
   }
 
-  @Input('value')
+  @Input("value")
   set setValue(value: any) {
     this.showChanges(value);
   }
