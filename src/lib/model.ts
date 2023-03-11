@@ -7,6 +7,12 @@ export interface IdTitle {
 }
 
 
+export interface ActionButton {
+    key: string;
+    title: string;
+    icon: string;
+}
+
 
 export class FilterCachedProvider implements FreeProvider {
     private transformedArray!: IdTitle[];

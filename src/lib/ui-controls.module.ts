@@ -14,11 +14,7 @@ import {ButtonComponent} from "./button/button.component";
 import {IconButtonComponent} from "./icon-button/icon-button.component";
 import {DataViewComponent} from "./data-view/data-view.component";
 
-export interface ActionButton {
-    key: string;
-    title: string;
-    icon: string;
-}
+
 
 
 const components = [

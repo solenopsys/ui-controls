@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import { ActionButton } from "../ui-controls.module";
+import {ActionButton} from "@solenopsys/ui-controls";
 
 
 

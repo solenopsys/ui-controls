@@ -4,5 +4,8 @@
   "component": "ButtonGroupComponent",
   "package": "@solenopsys/ui-controls",
   "io": {
+    actions: [
+
+    ],
   }
 }

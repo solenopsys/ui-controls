@@ -4,5 +4,32 @@
   "component": "ButtonComponent",
   "package": "@solenopsys/ui-controls",
   "io": {
-  }
+    "title": {
+      "directions": [
+        "input"
+      ],
+      "type": "string"
+    },
+    "icon": {
+      "directions": [
+        "input"
+      ],
+      "type": "string"
+    }
+  },
+  "stories": [
+    {
+      "title": "Simple button",
+      "params": {
+        "title": "Simple button"
+      }
+    },
+    {
+      "title": "Button width icon",
+      "params": {
+        "title": "Icon button button",
+        "icon": "fa fa-plus"
+      }
+    }
+  ]
 }
