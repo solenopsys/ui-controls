@@ -4,7 +4,7 @@ import { ViewType,DataView } from "@solenopsys/ui-utils";
 @Component({
   selector: 'ui-data-view',
   templateUrl: './data-view.component.html',
-  styleUrls: ['./data-view.component.css'],
+  styleUrls: ['./data-view.component.scss'],
 })
 export class DataViewComponent implements OnInit {
   @Input()

@@ -5,7 +5,7 @@ import {FreeProvider} from "@solenopsys/ui-utils";
 @Component({
     selector: 'ui-select-save',
     templateUrl: './select-save.component.html',
-    styleUrls: ['./select-save.component.css']
+    styleUrls: ['./select-save.component.scss']
 })
 export class SelectSaveComponent {
     @Output()

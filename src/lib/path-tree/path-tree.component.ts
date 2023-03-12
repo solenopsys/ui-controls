@@ -4,7 +4,7 @@ import {GraphItem, PathTreeCalculatorService} from "./path-tree-calculator.servi
 @Component({
   selector: 'ui-path-tree',
   templateUrl: './path-tree.component.html',
-  styleUrls: ['./path-tree.component.css']
+  styleUrls: ['./path-tree.component.scss']
 })
 export class PathTreeComponent implements OnInit, AfterViewInit {
   @Input()
