@@ -1,5 +1,6 @@
 {
   "name": "ui-controls",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-controls/src",
   "prefix": "ui",
