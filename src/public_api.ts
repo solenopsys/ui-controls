@@ -7,5 +7,8 @@ export * from './lib/path-tree/path-tree.component';
 export * from './lib/path-tree/path-tree-calculator.service';
 export * from './lib/path-tree/model';
 export * from './lib/icon-button/icon-button.component';
-export {PlayOntrol} from "./lib/video/play-сontrol";
+export * from './lib/buttons-group/button-group.component';
+export * from './lib/button/button.component';
+export * from './lib/data-view/data-view.component';
+export * from "./lib/video/play-сontrol";
 

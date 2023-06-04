@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider} from "../model";
+
 
 
 @Component({

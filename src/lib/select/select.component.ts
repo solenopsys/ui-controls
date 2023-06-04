@@ -1,7 +1,6 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import { IdTitle} from "../model";
-import {FreeProvider} from "@solenopsys/ui-utils";
+import {FreeProvider, IdTitle} from "../model";
 
 
 

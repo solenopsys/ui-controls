@@ -1,5 +1,4 @@
 import {Observable, Subject} from "rxjs";
-import {FreeProvider} from "@solenopsys/ui-utils";
 
 export interface IdTitle {
     title: string;
@@ -33,4 +32,8 @@ export class FilterCachedProvider implements FreeProvider {
         });
         return sub.asObservable();
     }
+}
+
+export interface FreeProvider {
+    initFilterSelector(str: Observable<string>): Observable<IdTitle[]>;
 }
