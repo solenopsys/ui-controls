@@ -1,10 +1,12 @@
 {
   "name": "@solenopsys/ui-controls",
   "version": "0.1.0",
+  "type": "module",
+  "private": true,
   "peerDependencies": {
     "@solenopsys/ui-utils": "0.1.0"
   },
   "scripts": {
-    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.packages.json"
+    "build": "xs-pack"
   }
 }
