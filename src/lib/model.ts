@@ -1,12 +1,12 @@
 import {Observable, Subject} from "rxjs";
 
-export interface IdTitle {
+export type IdTitle = {
     title: string;
     id: string;
 }
 
 
-export interface ActionButton {
+export type ActionButton = {
     key: string;
     title: string;
     icon: string;

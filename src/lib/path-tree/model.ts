@@ -15,12 +15,12 @@ export enum ItemType {
 }
 
 
-export interface ItemLink {
+export type ItemLink ={
     id: string;
     count: number;
 }
 
-export interface ItemAbstract {
+export type ItemAbstract = {
     id: string;
     title: string;
     goals?: string[];
@@ -29,13 +29,13 @@ export interface ItemAbstract {
 }
 
 
-export interface ProcessData extends ItemAbstract {
+export type ProcessData =  {
     term?: number;
-}
+} & ItemAbstract
 
-export interface ResourceData extends ItemAbstract {
+export type ResourceData =  {
     x?: number;
-}
+} & ItemAbstract
 
 
 export class FilterObservableProvider implements FreeProvider {

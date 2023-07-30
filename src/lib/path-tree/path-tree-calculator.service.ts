@@ -1,5 +1,5 @@
 
-export interface GraphItem {
+export type GraphItem = {
   id: string;
   name: string;
   count: number;
@@ -7,7 +7,7 @@ export interface GraphItem {
   long: number;
 }
 
-export interface DrawItem {
+export type DrawItem ={
   x: number;
   y: number;
   long: number;
